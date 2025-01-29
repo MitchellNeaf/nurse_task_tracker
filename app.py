@@ -46,7 +46,7 @@ for index, row in df.iterrows():
         df = df.reset_index(drop=True)
         df.to_csv(FILE_NAME, index=False)  # Update CSV after deletion
         st.success(f"Deleted task: {row['Task Name']}")
-        st.experimental_rerun()  # Refresh the app to update UI
+        st.rerun()  # Refresh the app to update UI
 
 # Visualization of time spent on tasks by category
 if not df.empty:
@@ -61,4 +61,21 @@ if not df.empty:
     ax.axis("equal")  # Equal aspect ratio ensures that pie is drawn as a circle.
     
     # Show the pie chart
+    st.pyplot(fig)
+
+# Visualization for time spent on tasks by category
+if not df.empty:
+    st.subheader("Time Spent by Category")
+    
+    # Group the tasks by category and sum the time spent
+    time_by_category = df.groupby('Category')['Time Spent (minutes)'].sum().sort_values()
+
+    # Create a bar chart
+    fig, ax = plt.subplots()
+    time_by_category.plot(kind='barh', ax=ax, color='skyblue')
+    ax.set_xlabel("Time Spent (minutes)")
+    ax.set_ylabel("Task Category")
+    ax.set_title("Total Time Spent by Task Category")
+
+    # Display the chart
     st.pyplot(fig)

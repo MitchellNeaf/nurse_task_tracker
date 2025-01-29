@@ -3,3 +3,39 @@ Morning Meds,Medications,90
 Antibiotics,Medications,30
 AM Care,Patient Care,30
 Nursing Assessment,Documentation,60
+Pain Management,Medications,20
+Wound Care,Patient Care,45
+IV Insertion,Patient Care,30
+Blood Pressure Check,Patient Care,15
+Med Reconciliation,Documentation,40
+Patient Education,Patient Care,25
+Blood Draw,Patient Care,35
+Medication Education,Patient Care,50
+Discharge Planning,Documentation,55
+Chart Review,Documentation,20
+Administer Insulin,Medications,25
+Bathing,Patient Care,40
+Patient Transfer,Patient Care,20
+Post-Op Care,Patient Care,60
+Health Status Update,Documentation,50
+Pain Assessment,Patient Care,15
+Vitals Check,Patient Care,10
+Nutritional Assessment,Patient Care,40
+Glucometer Check,Medications,10
+Infection Control,Patient Care,25
+PPE Change,Patient Care,5
+Oral Care,Patient Care,15
+IV Maintenance,Patient Care,30
+Patient Education on Meds,Patient Care,35
+Medication Prep,Medications,40
+Pre-Op Prep,Patient Care,45
+Respiratory Check,Patient Care,20
+Medication Order Verification,Medications,30
+Pre-Assessment,Documentation,25
+Blood Glucose Monitoring,Medications,15
+Patient Repositioning,Patient Care,25
+IV Fluids Administration,Medications,20
+EKG Monitoring,Patient Care,30
+Charting on Patient,Documentation,45
+Family Communication,Documentation,35
+Patient Mobility Assistance,Patient Care,20
